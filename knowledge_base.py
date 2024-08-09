@@ -2,16 +2,16 @@ import openai
 from dotenv import load_dotenv, find_dotenv
 import os
 from supabase import create_client, Client
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
-from langchain.vectorstores import FAISS, SupabaseVectorStore
-from langchain.document_loaders import TextLoader, PyPDFLoader
+from langchain_community.embeddings.openai import OpenAIEmbeddings
+from langchain_community.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
+from langchain_community.vectorstores import FAISS, SupabaseVectorStore
+from langchain_community.document_loaders import TextLoader, PyPDFLoader
 import requests
 from bs4 import BeautifulSoup
 import pickle
-from langchain import OpenAI
-from langchain.chains import VectorDBQAWithSourcesChain
-from langchain.embeddings.base import Embeddings
+from langchain_community import OpenAI
+from langchain_community.chains import VectorDBQAWithSourcesChain
+from langchain_community.embeddings.base import Embeddings
 from sentence_transformers import SentenceTransformer
 from termcolor import colored
 
